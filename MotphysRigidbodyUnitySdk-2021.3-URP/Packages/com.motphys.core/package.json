@@ -1,0 +1,28 @@
+{
+  "name": "com.motphys.core",
+  "version": "2.0.0-beta.6",
+  "displayName": "Motphys Core",
+  "description": "Motphys Engine Core Library",
+  "unity": "2020.3",
+  "keywords": [
+    "motphys",
+    "engine",
+    "core"
+  ],
+  "author": "Motphys Developers <developers@motphys.com>",
+  "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.core@2.0.0-beta.6/manual/index.html",
+  "licensesUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/LICENSE.md",
+  "changelogUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/CHANGELOG.md",
+  "type": "library",
+  "dependencies": {
+    "com.unity.collections": "1.4.0"
+  },
+  "contributors": [
+    "Zhao Xiang <xiang.zhao@motphys.com>",
+    "Zhang Heng <heng.zhang@motphys.com>",
+    "Zhao Yuanqi <yuanqi.zhao@motphys.com>",
+    "Li Fuheng <fuheng.li@motphys.com>",
+    "Liu Yang <yang.liu@motphys.com>",
+    "Zhao Yiming <yiming.zhao@motphys.com>"
+  ]
+}

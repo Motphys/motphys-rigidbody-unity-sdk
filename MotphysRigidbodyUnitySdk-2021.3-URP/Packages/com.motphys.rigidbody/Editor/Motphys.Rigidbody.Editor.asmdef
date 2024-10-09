@@ -1,0 +1,20 @@
+{
+    "name": "Motphys.Rigidbody.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c35cdcfa831a14a0898303d4c71a562f",
+        "GUID:b680983eb86e6466a9cb18b047d162f8",
+        "GUID:d3c8c88d334324a5cb944d3c82c7c051"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

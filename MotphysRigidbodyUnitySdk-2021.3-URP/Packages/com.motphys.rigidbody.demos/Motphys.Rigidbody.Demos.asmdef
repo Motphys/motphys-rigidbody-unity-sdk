@@ -1,0 +1,19 @@
+{
+    "name": "Motphys.Rigidbody.Demos",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c35cdcfa831a14a0898303d4c71a562f",
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:d3c8c88d334324a5cb944d3c82c7c051",
+        "GUID:b680983eb86e6466a9cb18b047d162f8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

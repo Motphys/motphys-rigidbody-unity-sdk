@@ -1,0 +1,77 @@
+#pragma kernel CSMain
+/// <summary>
+/// Axis-Aligned Bounding Box, used for calculate vertex position
+/// </summary>
+struct Aabb
+{
+    float3 min;
+    float3 max;
+};
+/// <summary>
+/// AABB vertex output buffer, each aabb input has 24 vertex output.
+/// </summary>
+RWStructuredBuffer<float3> _Aabbs;
+/// <summary>
+/// AABB data input buffer.
+/// </summary>
+RWStructuredBuffer<Aabb> _Input;
+/// <summary>
+/// Current used max count (the threads may be larger than count)
+/// </summary>
+uint _MaxCount;
+
+/// <summary>
+/// Kernel main function
+/// </summary>
+[numthreads(512, 1, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    uint realIndex = id.x;
+    if (realIndex >= _MaxCount) return;
+
+    Aabb aabb = _Input[realIndex];
+
+    float3 min = aabb.min;
+    float3 max = aabb.max;
+
+    float3 center = (min + max) * 0.5f;
+    float3 size = (max - min) * 0.5f;
+
+    float3 v0 = center + float3(-size.x, -size.y, -size.z);
+    float3 v1 = center + float3(size.x, -size.y, -size.z);
+    float3 v2 = center + float3(size.x, -size.y, size.z);
+    float3 v3 = center + float3(-size.x, -size.y, size.z);
+
+    float3 v4 = center + float3(-size.x, size.y, -size.z);
+    float3 v5 = center + float3(size.x, size.y, -size.z);
+    float3 v6 = center + float3(size.x, size.y, size.z);
+    float3 v7 = center + float3(-size.x, size.y, size.z);
+
+    uint base = (realIndex) * 24;
+    _Aabbs[base + 0] = v0;
+    _Aabbs[base + 1] = v1;
+    _Aabbs[base + 2] = v1;
+    _Aabbs[base + 3] = v2;
+    _Aabbs[base + 4] = v2;
+    _Aabbs[base + 5] = v3;
+    _Aabbs[base + 6] = v3;
+    _Aabbs[base + 7] = v0;
+
+    _Aabbs[base + 8] = v4;
+    _Aabbs[base + 9] = v5;
+    _Aabbs[base + 10] = v5;
+    _Aabbs[base + 11] = v6;
+    _Aabbs[base + 12] = v6;
+    _Aabbs[base + 13] = v7;
+    _Aabbs[base + 14] = v7;
+    _Aabbs[base + 15] = v4;
+
+    _Aabbs[base + 16] = v0;
+    _Aabbs[base + 17] = v4;
+    _Aabbs[base + 18] = v1;
+    _Aabbs[base + 19] = v5;
+    _Aabbs[base + 20] = v2;
+    _Aabbs[base + 21] = v6;
+    _Aabbs[base + 22] = v3;
+    _Aabbs[base + 23] = v7;
+}

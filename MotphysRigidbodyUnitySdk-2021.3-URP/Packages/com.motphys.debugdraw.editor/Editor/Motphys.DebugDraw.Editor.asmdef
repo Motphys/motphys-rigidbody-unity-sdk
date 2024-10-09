@@ -1,0 +1,22 @@
+{
+    "name": "Motphys.DebugDraw.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Motphys.Rigidbody",
+        "Unity.Mathematics",
+        "Motphys.DebugDraw.Core",
+        "Motphys.Rigidbody.RawApi",
+        "Motphys.DebugDraw.Editor.PlayMode"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,26 @@
+{
+  "name": "com.motphys.debugdraw.editor",
+  "version": "2.0.0-beta.6",
+  "displayName": "Motphys Debug Draw Editor",
+  "description": "Visualization tools provided by Motphys, used for visualizing objects in various scenarios.",
+  "unity": "2020.3",
+  "dependencies": {
+    "com.motphys.debugdraw.core": "2.0.0-beta.6",
+    "com.motphys.rigidbody": "2.0.0-beta.6",
+    "com.motphys.rigidbody.rawapi": "2.0.0-beta.6",
+    "com.unity.collections": "1.4.0",
+    "com.unity.mathematics": "1.2.6"
+  },
+  "author": "Motphys Developers <developers@motphys.com>",
+  "type": "library",
+  "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.debugdraw.editor@2.0.0-beta.6/manual/index.html",
+  "licensesUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/LICENSE.md",
+  "changelogUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/CHANGELOG.md",
+  "contributors": [
+    "Li Fuheng <fuheng.li@motphys.com>",
+    "Zhao Xiang <xiang.zhao@motphys.com>",
+    "Zhao Yuanqi <yuanqi.zhao@motphys.com>",
+    "Zhang Heng <heng.zhang@motphys.com>",
+    "Liu Yang <yang.liu@motphys.com>"
+  ]
+}

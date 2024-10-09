@@ -1,0 +1,6008 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &24852630604498628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7423050134346919951}
+  - component: {fileID: 8108694765396504908}
+  - component: {fileID: 1049621564505713532}
+  - component: {fileID: 4085666237735984323}
+  m_Layer: 0
+  m_Name: joint17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7423050134346919951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24852630604498628}
+  m_LocalRotation: {x: 0, y: 0.098017275, z: 3.061617e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729795, y: -1.2022842e-17, z: -1.4210854e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3076558899654845405}
+  m_Father: {fileID: 4312479301210293755}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8108694765396504908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24852630604498628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &1049621564505713532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24852630604498628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &4085666237735984323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24852630604498628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 8154451091786132354}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.1935067, y: -6.207966e-17, z: 0.03849038}
+    axisRotation: {x: -3.3066406e-16, y: 348.75003, z: -3.3572807e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &38947492348983690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3628639257999363290}
+  m_Layer: 0
+  m_Name: joint33
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3628639257999363290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38947492348983690}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.019338608, y: 1.2022842e-17, z: -0.1963479}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2655288936938109348}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &246461830615002584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108059452410422415}
+  - component: {fileID: 5114879617518229292}
+  - component: {fileID: 5293654469388901234}
+  - component: {fileID: 889239787236721467}
+  m_Layer: 0
+  m_Name: joint12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &108059452410422415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246461830615002584}
+  m_LocalRotation: {x: 3.8704974e-34, y: 0.09801732, z: 1.951667e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729793, y: -5.6949495e-18, z: 1.0658141e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6655688658105205023}
+  m_Father: {fileID: 8016551428361150595}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5114879617518229292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246461830615002584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5293654469388901234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246461830615002584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &889239787236721467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246461830615002584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 1606850974250666122}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350663, y: -3.6476198e-16, z: 0.038490865}
+    axisRotation: {x: -2.671078e-16, y: 348.75006, z: -2.7119958e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &363556138239824826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3157557957358054492}
+  - component: {fileID: 7746177471214561583}
+  - component: {fileID: 8182915472844861692}
+  - component: {fileID: 5162562986555723046}
+  m_Layer: 0
+  m_Name: joint25
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3157557957358054492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363556138239824826}
+  m_LocalRotation: {x: -4.838122e-35, y: 0.098017275, z: -3.0154327e-18, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729795, y: -1.1841478e-18, z: 1.3100631e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8778144439769179551}
+  m_Father: {fileID: 6720158093510549362}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7746177471214561583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363556138239824826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &8182915472844861692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363556138239824826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &5162562986555723046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363556138239824826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 2981293586021376144}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350716, y: 6.935402e-16, z: 0.038490582}
+    axisRotation: {x: 1.00316064e-16, y: 348.75003, z: 1.0184246e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &741621235497299204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9007486436688859926}
+  - component: {fileID: 4711464774585000960}
+  - component: {fileID: 4484157082490948801}
+  - component: {fileID: 3008605174423841058}
+  m_Layer: 0
+  m_Name: joint28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9007486436688859926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741621235497299204}
+  m_LocalRotation: {x: 0, y: 0.09801732, z: -1.951667e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729793, y: 5.6949495e-18, z: -2.1316282e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7933966696463185382}
+  m_Father: {fileID: 6320903972107353924}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4711464774585000960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741621235497299204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &4484157082490948801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741621235497299204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &3008605174423841058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741621235497299204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 671742275415568376}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350697, y: 6.2505213e-16, z: 0.038490895}
+    axisRotation: {x: 2.6710567e-16, y: 348.75006, z: 2.7119968e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &777692070727146546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6513353536016049814}
+  - component: {fileID: 585811827740763144}
+  - component: {fileID: 5281257860837229342}
+  - component: {fileID: 6639366497646960338}
+  m_Layer: 0
+  m_Name: joint8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6513353536016049814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777692070727146546}
+  m_LocalRotation: {x: 0, y: 0.09801705, z: -3.015433e-18, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729798, y: 3.5069323e-18, z: -1.3322676e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8159963719426821601}
+  m_Father: {fileID: 4821238879885676634}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &585811827740763144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777692070727146546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5281257860837229342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777692070727146546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &6639366497646960338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777692070727146546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 7963008171311981752}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350693, y: -2.8245613e-16, z: 0.038491044}
+    axisRotation: {x: -3.3868364e-17, y: 348.74997, z: -3.4387894e-16}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &1482515438706096686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590772150920096963}
+  - component: {fileID: 6919007103912736492}
+  - component: {fileID: 4854882092493610165}
+  - component: {fileID: 6357274678762455999}
+  m_Layer: 0
+  m_Name: joint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590772150920096963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482515438706096686}
+  m_LocalRotation: {x: 3.8704974e-34, y: 0.09801732, z: -2.3781138e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729793, y: 1.0654501e-17, z: 8.8817837e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4837622969433803711}
+  m_Father: {fileID: 1496451460077967324}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6919007103912736492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482515438706096686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &4854882092493610165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482515438706096686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &6357274678762455999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482515438706096686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 1850126063510939873}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350697, y: -8.778555e-17, z: 0.038490776}
+    axisRotation: {x: 2.1920832e-16, y: 348.75006, z: 2.2256752e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &1864135290191816779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90283304909648546}
+  - component: {fileID: 4923123313263869402}
+  - component: {fileID: 5313557161943263713}
+  - component: {fileID: 312798077860882122}
+  m_Layer: 0
+  m_Name: joint10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &90283304909648546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864135290191816779}
+  m_LocalRotation: {x: -9.676245e-35, y: 0.09801705, z: 8.930404e-18, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729795, y: -1.1841478e-18, z: 1.7985613e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8016551428361150595}
+  m_Father: {fileID: 8159963719426821601}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4923123313263869402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864135290191816779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5313557161943263713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864135290191816779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &312798077860882122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864135290191816779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 4896060361265084154}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350699, y: -3.5266466e-16, z: 0.038491033}
+    axisRotation: {x: -1.6288679e-16, y: 348.75, z: -1.6538272e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &1872942083354231530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8778144439769179551}
+  - component: {fileID: 6817110160372995325}
+  - component: {fileID: 2981293586021376144}
+  - component: {fileID: 8389930892181496434}
+  m_Layer: 0
+  m_Name: joint26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8778144439769179551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872942083354231530}
+  m_LocalRotation: {x: 2.9028732e-34, y: 0.09801705, z: -8.930404e-18, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729795, y: 1.1841478e-18, z: 6.883383e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6320903972107353924}
+  m_Father: {fileID: 3157557957358054492}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6817110160372995325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872942083354231530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &2981293586021376144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872942083354231530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &8389930892181496434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872942083354231530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 2601227528737257573}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.1935067, y: 7.0407417e-16, z: 0.038490713}
+    axisRotation: {x: 1.6288144e-16, y: 348.74997, z: 1.6538183e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &1978880938773921988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8366676450831876361}
+  - component: {fileID: 4551597333843157689}
+  - component: {fileID: 5196523269904596392}
+  - component: {fileID: 8871292506587844127}
+  m_Layer: 0
+  m_Name: joint22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8366676450831876361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978880938773921988}
+  m_LocalRotation: {x: -2.9028732e-34, y: 0.09801732, z: 1.4502193e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729798, y: -7.6641146e-18, z: 1.5987211e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5909513764670827218}
+  m_Father: {fileID: 5133942737135623281}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4551597333843157689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978880938773921988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5196523269904596392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978880938773921988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &8871292506587844127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978880938773921988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 2194565606587716656}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350648, y: 4.974739e-16, z: 0.038490836}
+    axisRotation: {x: -1.0031166e-16, y: 348.75, z: -1.0184229e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &2027627850545964125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5476910883392928375}
+  - component: {fileID: 8520865615656648548}
+  - component: {fileID: 6342024826292590912}
+  - component: {fileID: 6955518868240404071}
+  m_Layer: 0
+  m_Name: joint31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5476910883392928375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027627850545964125}
+  m_LocalRotation: {x: -1.9352487e-34, y: 0.09801717, z: -2.943961e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729793, y: 1.0654501e-17, z: -7.105427e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2655288936938109348}
+  m_Father: {fileID: 675183724062605433}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8520865615656648548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027627850545964125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &6342024826292590912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027627850545964125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &6955518868240404071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027627850545964125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5975152529711963697}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: -0.05727245, y: 2.0042916e-16, z: 0.18880276}
+    axisRotation: {x: -2.0368426e-15, y: 253.12497, z: -1.37312765e-14}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &2533167945249279105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4821238879885676634}
+  - component: {fileID: 1402175776282384419}
+  - component: {fileID: 5440759443659603967}
+  - component: {fileID: 8187707747077629635}
+  m_Layer: 0
+  m_Name: joint7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4821238879885676634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2533167945249279105}
+  m_LocalRotation: {x: 3.8704974e-34, y: 0.09801717, z: -8.930403e-18, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729793, y: 5.6949495e-18, z: 7.105427e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6513353536016049814}
+  m_Father: {fileID: 5655146808182148618}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1402175776282384419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2533167945249279105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5440759443659603967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2533167945249279105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &8187707747077629635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2533167945249279105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5281257860837229342}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.193507, y: -2.3441475e-16, z: 0.03849088}
+    axisRotation: {x: 3.3869784e-17, y: 348.75, z: 3.4387923e-16}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &3158945127899571062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1389363455738253311}
+  m_Layer: 0
+  m_Name: EllipsoidRing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1389363455738253311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3158945127899571062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.168, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6296064704708266663}
+  - {fileID: 8779263439862927569}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3230528815626480085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487190893974842205}
+  - component: {fileID: 613517653625540968}
+  - component: {fileID: 5481531523471189366}
+  - component: {fileID: 3161688834581238095}
+  m_Layer: 0
+  m_Name: joint14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487190893974842205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3230528815626480085}
+  m_LocalRotation: {x: 1.1611493e-33, y: 0.09801732, z: 2.7131694e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729798, y: -9.338754e-18, z: 1.2434498e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3196568403649516437}
+  m_Father: {fileID: 6655688658105205023}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &613517653625540968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3230528815626480085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5481531523471189366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3230528815626480085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &3161688834581238095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3230528815626480085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 453304911740731292}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350666, y: -3.0059706e-16, z: 0.038490873}
+    axisRotation: {x: -3.3066192e-16, y: 348.75, z: -3.357283e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &3388114996498395359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4312479301210293755}
+  - component: {fileID: 4775060314441928722}
+  - component: {fileID: 2670809089988139419}
+  - component: {fileID: 2985382333923982732}
+  m_Layer: 0
+  m_Name: joint16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4312479301210293755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3388114996498395359}
+  m_LocalRotation: {x: 1.935249e-34, y: 0.09801705, z: 3.061617e-17, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729798, y: -1.1560813e-17, z: 2.3092638e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7423050134346919951}
+  m_Father: {fileID: 3196568403649516437}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4775060314441928722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3388114996498395359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &2670809089988139419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3388114996498395359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &2985382333923982732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3388114996498395359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 1049621564505713532}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350663, y: -1.5820705e-16, z: 0.03849098}
+    axisRotation: {x: -3.4388214e-16, y: 348.74997, z: -3.4914613e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &3509195263222102325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8016551428361150595}
+  - component: {fileID: 5274171644417921375}
+  - component: {fileID: 4896060361265084154}
+  - component: {fileID: 5855537158657587886}
+  m_Layer: 0
+  m_Name: joint11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8016551428361150595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3509195263222102325}
+  m_LocalRotation: {x: -9.676244e-35, y: 0.09801717, z: 1.4502193e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729798, y: -3.5069323e-18, z: 3.5527136e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 108059452410422415}
+  m_Father: {fileID: 90283304909648546}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5274171644417921375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3509195263222102325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &4896060361265084154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3509195263222102325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &5855537158657587886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3509195263222102325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5293654469388901234}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350651, y: -3.6744268e-16, z: 0.038490925}
+    axisRotation: {x: -2.1921066e-16, y: 348.74997, z: -2.2256767e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &4233324291846072237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2655288936938109348}
+  - component: {fileID: 837276463467203767}
+  - component: {fileID: 5975152529711963697}
+  - component: {fileID: 1111428479123202956}
+  m_Layer: 0
+  m_Name: joint32
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2655288936938109348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4233324291846072237}
+  m_LocalRotation: {x: -8.565834e-17, y: 0.8032075, z: 8.565834e-17, w: 0.5956993}
+  m_LocalPosition: {x: -0.19729798, y: 1.1560813e-17, z: -9.7699626e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3628639257999363290}
+  m_Father: {fileID: 5476910883392928375}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837276463467203767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4233324291846072237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5975152529711963697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4233324291846072237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &1111428479123202956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4233324291846072237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 751921796756341809}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350675, y: 9.665964e-18, z: 0.038490534}
+    axisRotation: {x: 3.2144392e-14, y: 84.375015, z: 3.465549e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &4498146536145996388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3076558899654845405}
+  - component: {fileID: 3341473344305913657}
+  - component: {fileID: 8154451091786132354}
+  - component: {fileID: 2238193142793486163}
+  m_Layer: 0
+  m_Name: joint18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3076558899654845405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4498146536145996388}
+  m_LocalRotation: {x: -1.1611493e-33, y: 0.09801705, z: 2.9439613e-17, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729795, y: -1.2022842e-17, z: -5.7731595e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7909245879552712650}
+  m_Father: {fileID: 7423050134346919951}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3341473344305913657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4498146536145996388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &8154451091786132354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4498146536145996388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &2238193142793486163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4498146536145996388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 8806141073559529722}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350672, y: 4.6099123e-17, z: 0.03849096}
+    axisRotation: {x: -3.0473898e-16, y: 348.74997, z: -3.0940998e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &4755143195869738567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8159963719426821601}
+  - component: {fileID: 8275918653328324927}
+  - component: {fileID: 7963008171311981752}
+  - component: {fileID: 5228124231330358856}
+  m_Layer: 0
+  m_Name: joint9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8159963719426821601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755143195869738567}
+  m_LocalRotation: {x: -7.257183e-35, y: 0.098017275, z: 3.0154327e-18, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729795, y: 1.1841478e-18, z: -4.2188474e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 90283304909648546}
+  m_Father: {fileID: 6513353536016049814}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275918653328324927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755143195869738567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &7963008171311981752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755143195869738567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &5228124231330358856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755143195869738567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5313557161943263713}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350685, y: -3.2318389e-16, z: 0.038491014}
+    axisRotation: {x: -1.00307064e-16, y: 348.75003, z: -1.0184216e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &5008516573563198477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3196568403649516437}
+  - component: {fileID: 2132129966496106186}
+  - component: {fileID: 453304911740731292}
+  - component: {fileID: 768216184211731200}
+  m_Layer: 0
+  m_Name: joint15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3196568403649516437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008516573563198477}
+  m_LocalRotation: {x: -1.9352487e-34, y: 0.09801717, z: 2.943961e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729793, y: -1.0654501e-17, z: -3.5527136e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4312479301210293755}
+  m_Father: {fileID: 487190893974842205}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132129966496106186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008516573563198477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &453304911740731292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008516573563198477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &768216184211731200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008516573563198477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 2670809089988139419}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350705, y: -2.3858853e-16, z: 0.038490828}
+    axisRotation: {x: -3.4387738e-16, y: 348.75003, z: -3.4914656e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &5102468829730521854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6296064704708266663}
+  - component: {fileID: 5794412652718055794}
+  m_Layer: 0
+  m_Name: Ring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6296064704708266663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5102468829730521854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1389363455738253311}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &5794412652718055794
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5102468829730521854}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5bb13a1b912c93c49947601d5713d969, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 1865056248366311061, guid: 0e48234c8e3323c44badbe771edef187, type: 3}
+  m_Bones:
+  - {fileID: 3348256832412507728}
+  - {fileID: 7612917139389967054}
+  - {fileID: 1496451460077967324}
+  - {fileID: 590772150920096963}
+  - {fileID: 4837622969433803711}
+  - {fileID: 5655146808182148618}
+  - {fileID: 4821238879885676634}
+  - {fileID: 6513353536016049814}
+  - {fileID: 8159963719426821601}
+  - {fileID: 90283304909648546}
+  - {fileID: 8016551428361150595}
+  - {fileID: 108059452410422415}
+  - {fileID: 6655688658105205023}
+  - {fileID: 487190893974842205}
+  - {fileID: 3196568403649516437}
+  - {fileID: 4312479301210293755}
+  - {fileID: 7423050134346919951}
+  - {fileID: 3076558899654845405}
+  - {fileID: 7909245879552712650}
+  - {fileID: 6684221297340908347}
+  - {fileID: 5133942737135623281}
+  - {fileID: 8366676450831876361}
+  - {fileID: 5909513764670827218}
+  - {fileID: 6720158093510549362}
+  - {fileID: 3157557957358054492}
+  - {fileID: 8778144439769179551}
+  - {fileID: 6320903972107353924}
+  - {fileID: 9007486436688859926}
+  - {fileID: 7933966696463185382}
+  - {fileID: 675183724062605433}
+  - {fileID: 5476910883392928375}
+  - {fileID: 2655288936938109348}
+  - {fileID: 3628639257999363290}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 3348256832412507728}
+  m_AABB:
+    m_Center: {x: -0.09864974, y: -0.000000059604645, z: 1.0180897}
+    m_Extent: {x: 1.3219548, y: 0.25000006, z: 1.3091215}
+  m_DirtyAABB: 0
+--- !u!1 &5335152546963307162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8779263439862927569}
+  m_Layer: 0
+  m_Name: Skeleton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8779263439862927569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335152546963307162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3348256832412507728}
+  m_Father: {fileID: 1389363455738253311}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5501479390880899358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5133942737135623281}
+  - component: {fileID: 1980125801347245525}
+  - component: {fileID: 1685356615049438058}
+  - component: {fileID: 9026624859224442012}
+  m_Layer: 0
+  m_Name: joint21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5133942737135623281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5501479390880899358}
+  m_LocalRotation: {x: 1.9352487e-34, y: 0.098016776, z: 1.9516668e-17, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729798, y: -9.338754e-18, z: -3.5527136e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8366676450831876361}
+  m_Father: {fileID: 6684221297340908347}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1980125801347245525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5501479390880899358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &1685356615049438058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5501479390880899358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &9026624859224442012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5501479390880899358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5196523269904596392}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350693, y: 3.9334378e-16, z: 0.038490552}
+    axisRotation: {x: -1.6288192e-16, y: 348.74997, z: -1.6538247e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &5552109024278887552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1496451460077967324}
+  - component: {fileID: 7276939485224224944}
+  - component: {fileID: 4864292817721801297}
+  - component: {fileID: 3491101842376179100}
+  m_Layer: 0
+  m_Name: joint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1496451460077967324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5552109024278887552}
+  m_LocalRotation: {x: 5.805746e-34, y: 0.09801717, z: -2.7131694e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729798, y: 1.1560813e-17, z: 1.1546319e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 590772150920096963}
+  m_Father: {fileID: 7612917139389967054}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7276939485224224944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5552109024278887552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &4864292817721801297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5552109024278887552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &3491101842376179100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5552109024278887552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 4854882092493610165}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.1935069, y: -5.083994e-17, z: 0.038491018}
+    axisRotation: {x: 2.6710895e-16, y: 348.74997, z: 2.7119952e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &5657340108607053728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6720158093510549362}
+  - component: {fileID: 6668579491907176728}
+  - component: {fileID: 4199272291165735126}
+  - component: {fileID: 8563256011718227302}
+  m_Layer: 0
+  m_Name: joint24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6720158093510549362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5657340108607053728}
+  m_LocalRotation: {x: 2.4190612e-35, y: 0.09801705, z: 3.015433e-18, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729798, y: -3.5069323e-18, z: -1.3322676e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3157557957358054492}
+  m_Father: {fileID: 5909513764670827218}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6668579491907176728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5657340108607053728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &4199272291165735126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5657340108607053728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &8563256011718227302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5657340108607053728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 8182915472844861692}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350672, y: 6.528124e-16, z: 0.038490385}
+    axisRotation: {x: 3.3864615e-17, y: 348.74997, z: 3.4387936e-16}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &6314235106028168799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7612917139389967054}
+  - component: {fileID: 2071234162591750019}
+  - component: {fileID: 5157040882896022525}
+  - component: {fileID: 6598996510658707919}
+  m_Layer: 0
+  m_Name: joint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7612917139389967054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6314235106028168799}
+  m_LocalRotation: {x: 0, y: 0.09801705, z: -0, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729795, y: 1.2022842e-17, z: 5.551115e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1496451460077967324}
+  m_Father: {fileID: 3348256832412507728}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2071234162591750019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6314235106028168799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5157040882896022525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6314235106028168799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &6598996510658707919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6314235106028168799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 4864292817721801297}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350693, y: -2.4951993e-17, z: 0.038490947}
+    axisRotation: {x: 3.047408e-16, y: 348.75, z: 3.0940926e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &6522518784803406948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 675183724062605433}
+  - component: {fileID: 6559367350551954291}
+  - component: {fileID: 1686540805872922985}
+  - component: {fileID: 343624969975178424}
+  m_Layer: 0
+  m_Name: joint30
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &675183724062605433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6522518784803406948}
+  m_LocalRotation: {x: -5.8057464e-34, y: 0.09801732, z: -2.7131694e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729798, y: 9.338754e-18, z: -1.7763568e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5476910883392928375}
+  m_Father: {fileID: 7933966696463185382}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6559367350551954291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6522518784803406948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &1686540805872922985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6522518784803406948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &343624969975178424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6522518784803406948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 6342024826292590912}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350648, y: 4.1146717e-16, z: 0.038490836}
+    axisRotation: {x: 3.306642e-16, y: 348.75, z: 3.3572936e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &6575722149886713016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6684221297340908347}
+  - component: {fileID: 1966641784853523426}
+  - component: {fileID: 5015844538603401263}
+  - component: {fileID: 447259052309670754}
+  m_Layer: 0
+  m_Name: joint20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6684221297340908347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575722149886713016}
+  m_LocalRotation: {x: -1.9352487e-34, y: 0.09801732, z: 2.3781138e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729793, y: -1.0654501e-17, z: -5.3290704e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5133942737135623281}
+  m_Father: {fileID: 7909245879552712650}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1966641784853523426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575722149886713016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5015844538603401263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575722149886713016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &447259052309670754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575722149886713016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 1685356615049438058}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350713, y: 2.7940462e-16, z: 0.03849072}
+    axisRotation: {x: -2.1920748e-16, y: 348.75003, z: -2.2256792e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &7379154984447077758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6655688658105205023}
+  - component: {fileID: 7971100086281266819}
+  - component: {fileID: 1606850974250666122}
+  - component: {fileID: 7752045937348315854}
+  m_Layer: 0
+  m_Name: joint13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6655688658105205023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379154984447077758}
+  m_LocalRotation: {x: 5.805746e-34, y: 0.098016776, z: 2.3781137e-17, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729798, y: -7.6641146e-18, z: 3.5527136e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 487190893974842205}
+  m_Father: {fileID: 108059452410422415}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7971100086281266819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379154984447077758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &1606850974250666122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379154984447077758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &7752045937348315854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379154984447077758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5481531523471189366}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350682, y: -3.4275651e-16, z: 0.038491353}
+    axisRotation: {x: -3.0474284e-16, y: 348.74997, z: -3.0940902e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &7673478424870308362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6320903972107353924}
+  - component: {fileID: 5715548638706393677}
+  - component: {fileID: 2601227528737257573}
+  - component: {fileID: 2091828622138745114}
+  m_Layer: 0
+  m_Name: joint27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6320903972107353924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673478424870308362}
+  m_LocalRotation: {x: 9.676244e-35, y: 0.09801717, z: -1.4502193e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729798, y: 3.5069323e-18, z: 9.7699626e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9007486436688859926}
+  m_Father: {fileID: 8778144439769179551}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5715548638706393677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673478424870308362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &2601227528737257573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673478424870308362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &2091828622138745114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673478424870308362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 4484157082490948801}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350666, y: 6.816876e-16, z: 0.03849075}
+    axisRotation: {x: 2.1920796e-16, y: 348.74997, z: 2.2256816e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &8123931632255969786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5909513764670827218}
+  - component: {fileID: 969173378705003990}
+  - component: {fileID: 2194565606587716656}
+  - component: {fileID: 2906520385934111611}
+  m_Layer: 0
+  m_Name: joint23
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5909513764670827218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123931632255969786}
+  m_LocalRotation: {x: -2.902873e-34, y: 0.09801717, z: 8.930403e-18, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729793, y: -5.6949495e-18, z: -3.5527136e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6720158093510549362}
+  m_Father: {fileID: 8366676450831876361}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &969173378705003990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123931632255969786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &2194565606587716656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123931632255969786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &2906520385934111611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123931632255969786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 4199272291165735126}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350733, y: 5.8582424e-16, z: 0.038490742}
+    axisRotation: {x: -3.3869747e-17, y: 348.75, z: -3.438791e-16}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &8181067810019938621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7909245879552712650}
+  - component: {fileID: 7775958681849341493}
+  - component: {fileID: 8806141073559529722}
+  - component: {fileID: 863196126583601880}
+  m_Layer: 0
+  m_Name: joint19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7909245879552712650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181067810019938621}
+  m_LocalRotation: {x: -1.9352487e-34, y: 0.09801717, z: 2.7131694e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729798, y: -1.1560813e-17, z: 3.5527136e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6684221297340908347}
+  m_Father: {fileID: 3076558899654845405}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7775958681849341493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181067810019938621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &8806141073559529722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181067810019938621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &863196126583601880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181067810019938621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5015844538603401263}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.1935069, y: 1.6171018e-16, z: 0.038491044}
+    axisRotation: {x: -2.6711322e-16, y: 348.74997, z: -2.711992e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &8417108302045975964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3348256832412507728}
+  - component: {fileID: 7313784723800403535}
+  - component: {fileID: 751921796756341809}
+  - component: {fileID: 4471320198394286017}
+  m_Layer: 0
+  m_Name: joint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3348256832412507728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8417108302045975964}
+  m_LocalRotation: {x: -1.3932071e-31, y: -0.6715589, z: -4.1121124e-17, w: 0.7409512}
+  m_LocalPosition: {x: 1.0064462, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7612917139389967054}
+  m_Father: {fileID: 8779263439862927569}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7313784723800403535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8417108302045975964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &751921796756341809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8417108302045975964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &4471320198394286017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8417108302045975964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5157040882896022525}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350693, y: -1.2022842e-17, z: 0.038490888}
+    axisRotation: {x: 2.5734756e-22, y: 348.75, z: -9.7386564e-23}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &8489220641182882315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7933966696463185382}
+  - component: {fileID: 7079660667988884540}
+  - component: {fileID: 671742275415568376}
+  - component: {fileID: 5047899508005333404}
+  m_Layer: 0
+  m_Name: joint29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7933966696463185382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8489220641182882315}
+  m_LocalRotation: {x: 1.9352487e-34, y: 0.098016776, z: -2.3781137e-17, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729798, y: 7.6641146e-18, z: -1.0658141e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 675183724062605433}
+  m_Father: {fileID: 9007486436688859926}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7079660667988884540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8489220641182882315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &671742275415568376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8489220641182882315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &5047899508005333404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8489220641182882315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 1686540805872922985}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350663, y: 5.3437525e-16, z: 0.038490884}
+    axisRotation: {x: 3.04747e-16, y: 348.74997, z: 3.0940839e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &9000308946959565606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5655146808182148618}
+  - component: {fileID: 3089716933953088741}
+  - component: {fileID: 5976448165211015747}
+  - component: {fileID: 7709026567523386215}
+  m_Layer: 0
+  m_Name: joint6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5655146808182148618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000308946959565606}
+  m_LocalRotation: {x: -1.9352487e-34, y: 0.09801732, z: -1.4502193e-17, w: 0.9951847}
+  m_LocalPosition: {x: -0.19729798, y: 7.6641146e-18, z: -3.5527136e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4821238879885676634}
+  m_Father: {fileID: 4837622969433803711}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3089716933953088741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000308946959565606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &5976448165211015747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000308946959565606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &7709026567523386215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000308946959565606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5440759443659603967}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.1935068, y: -1.8322879e-16, z: 0.03849084}
+    axisRotation: {x: 1.0030485e-16, y: 348.75, z: 1.0184215e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+--- !u!1 &9068021552821890554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4837622969433803711}
+  - component: {fileID: 6121063305503084206}
+  - component: {fileID: 1850126063510939873}
+  - component: {fileID: 6117309347700050624}
+  m_Layer: 0
+  m_Name: joint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4837622969433803711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068021552821890554}
+  m_LocalRotation: {x: -1.9352487e-34, y: 0.098016776, z: -1.9516668e-17, w: 0.9951848}
+  m_LocalPosition: {x: -0.19729798, y: 9.338754e-18, z: -1.7763568e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5655146808182148618}
+  m_Father: {fileID: 590772150920096963}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6121063305503084206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068021552821890554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c8365db28542ec9b5ae0295a471c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 11400000, guid: 7fb008651f3dcb646982d422628b08f5, type: 2}
+  _isTrigger: 0
+  _translation: {x: 0, y: -0.05, z: 0}
+  _rotation: {x: 0, y: 0, z: 0}
+  _supportDynamicScale: 0
+  _radius: 0.17
+--- !u!114 &1850126063510939873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068021552821890554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fe586183244dfe885c0cd880ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mass: 0.2
+  _enableGravity: 1
+  _kinematics: 0
+  _enablePostTransformControl: 0
+  _freezePosition:
+    x: 0
+    y: 0
+    z: 0
+  _freezeRotation:
+    x: 0
+    y: 0
+    z: 0
+  _drag: 2
+  _angularDrag: 0.05
+  _maxLinearVelocity: 100
+  _maxAngularVelocity: 6.2831855
+  _sleepEnergyThreshold: 0.4
+--- !u!114 &6117309347700050624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068021552821890554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92103a0cf54dc486b9734d543b2e5897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConfigureConnected: 1
+  _connectBody: {fileID: 5976448165211015747}
+  _anchorFrame:
+    anchor: {x: 0, y: 0, z: 0}
+    axisRotation: {x: 0, y: 0, z: 0}
+  _connectedAnchorFrame:
+    anchor: {x: 0.19350702, y: -1.330532e-16, z: 0.038491044}
+    axisRotation: {x: 1.6288912e-16, y: 348.74997, z: 1.6538277e-15}
+  _ignoreCollision: 1
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _useMotor: 0
+  _useSpring: 0
+  _twistLimit:
+    _low: -10
+    _high: 10
+  _swingLimitY:
+    _low: -5
+    _high: 5
+  _swingLimitZ:
+    _low: -5
+    _high: 5
+  _limitSpring:
+    _compliance: 0
+    _damper: 0
+  _motor:
+    mode: 0
+    type: 0
+    targetRotation: {x: 0, y: 0, z: 0, w: 1}
+    targetAngularVelocity: {x: 0, y: 0, z: 0}
+    slerpDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    twistDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+    swingDrive:
+      spring:
+        _compliance: 0.01
+        _damper: 10
+      maxTorque: 0
+  _angularDamper: 3.2
+  _d3AngularMotorPack:
+    _rotationMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+    _velocityMotor:
+      mode: 0
+      type: 0
+      targetRotation: {x: 0, y: 0, z: 0, w: 1}
+      targetAngularVelocity: {x: 0, y: 0, z: 0}
+      slerpDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      twistDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity
+      swingDrive:
+        spring:
+          _compliance: 0.01
+          _damper: 10
+        maxTorque: Infinity

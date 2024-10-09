@@ -1,0 +1,34 @@
+{
+  "name": "com.motphys.rigidbody",
+  "version": "2.0.0-beta.6",
+  "displayName": "Motphys Rigidbody",
+  "description": "Motphys Rigidbody Unity SDK",
+  "unity": "2020.3",
+  "keywords": [
+    "motphys",
+    "engine",
+    "physics"
+  ],
+  "author": "Motphys Developers <developers@motphys.com>",
+  "dependencies": {
+    "com.motphys.rigidbody.rawapi": "2.0.0-beta.6"
+  },
+  "type": "library",
+  "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.rigidbody@2.0.0-beta.6/manual/index.html",
+  "licensesUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/LICENSE.md",
+  "changelogUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/CHANGELOG.md",
+  "contributors": [
+    "Zhang Heng <heng.zhang@motphys.com>",
+    "Li Fuheng <fuheng.li@motphys.com>",
+    "Zhao Yuanqi <yuanqi.zhao@motphys.com>",
+    "Zhao Xiang <xiang.zhao@motphys.com>",
+    "Liu Yang <yang.liu@motphys.com>",
+    "Yang Mukun <mukun.yang@motphys.com>",
+    "Ma Chen <chen.ma@motphys.com>",
+    "Zou Peicheng <peicheng.zou@motphys.com>",
+    "Xia Zeye <zeye.xia@motphys.com>",
+    "Liu Xiaonan <xiaonan.liu@motphys.com>",
+    "Zhao Yiming <yiming.zhao@motphys.com>",
+    "Zhang Bo <bo.zhang@motphys.com>"
+  ]
+}

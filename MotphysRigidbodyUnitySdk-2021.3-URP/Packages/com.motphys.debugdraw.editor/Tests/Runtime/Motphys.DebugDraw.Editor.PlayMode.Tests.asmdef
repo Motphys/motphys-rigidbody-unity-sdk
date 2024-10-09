@@ -1,0 +1,21 @@
+{
+    "name": "Motphys.DebugDraw.Editor.PlayMode.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:851c6fca661be524190222467c3aba11",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

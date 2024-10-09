@@ -1,0 +1,21 @@
+{
+  "name": "com.motphys.rigidbody.demos",
+  "version": "2.0.0-beta.6",
+  "displayName": "Motphys Rigidbody Demos",
+  "unity": "2020.3",
+  "dependencies": {
+    "com.motphys.rigidbody": "2.0.0-beta.6",
+    "com.unity.render-pipelines.universal": "12.1.7"
+  },
+  "author": "Motphys Developers <developers@motphys.com>",
+  "type": "library",
+  "private": true,
+  "contributors": [
+    "Li Fuheng <fuheng.li@motphys.com>",
+    "Zhao Xiang <xiang.zhao@motphys.com>",
+    "Ma Chen <chen.ma@motphys.com>",
+    "Zhao Yuanqi <yuanqi.zhao@motphys.com>",
+    "Yang Yue <yue.yang@motphys.com>",
+    "Xia Zeye <zeye.xia@motphys.com>"
+  ]
+}

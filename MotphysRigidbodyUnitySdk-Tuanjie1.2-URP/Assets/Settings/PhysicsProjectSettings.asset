@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98b3e060feec543af9bcbab144958bbe, type: 3}
+  m_Name: PhysicsProjectSettings
+  m_EditorClassIdentifier: 
+  _broadPhaseType:
+    algorithm: 3
+    gridConfig:
+      autoWorldAabb: 0
+      worldAabbMin: {x: -500, y: -500, z: -500}
+      worldAabbMax: {x: 500, y: 500, z: 500}
+      numCellsInX: 4
+      numCellsInZ: 4
+  _numSubstep: 2
+  _numSolverIter: 1
+  _numSolverVelocityIter: 1
+  _gravity: {x: 0, y: -9.8, z: 0}
+  _simulationMode: 0
+  _enableSceneQuery: 1
+  _enableContactEvent: 1
+  _allowExpandSpeculativeMargin: 0
+  _logLevelFilter: 0
+  _layerCollidesWith: ffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffff00e4ffff00e8ffff00f0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff

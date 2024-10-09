@@ -1,0 +1,4 @@
+apiRules:
+  - exclude:
+      # exclude everying
+      uidRegex: ^*$

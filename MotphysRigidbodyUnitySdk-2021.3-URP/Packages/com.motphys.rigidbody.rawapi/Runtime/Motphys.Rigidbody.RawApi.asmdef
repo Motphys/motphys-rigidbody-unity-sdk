@@ -1,0 +1,23 @@
+{
+    "name": "Motphys.Rigidbody.RawApi",
+    "rootNamespace": "",
+    "references": [
+        "Motphys.Core",
+        "Motphys.Rigidbody.Native"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.motphys.rigidbody.experimental",
+            "expression": "",
+            "define": "MOTPHYS_RIGIDBODY_EXPERIMENTAL"
+        }
+    ],
+    "noEngineReferences": false
+}

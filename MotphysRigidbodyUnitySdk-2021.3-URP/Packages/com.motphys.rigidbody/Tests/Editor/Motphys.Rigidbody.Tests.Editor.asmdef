@@ -1,0 +1,25 @@
+{
+    "name": "Motphys.Rigidbody.Tests.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Motphys.Rigidbody",
+        "Motphys.Core",
+        "Motphys.Rigidbody.Editor",
+        "Motphys.Rigidbody.RawApi"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

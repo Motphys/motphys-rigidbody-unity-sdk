@@ -1,0 +1,20 @@
+{
+    "name": "Motphys.Rigidbody.Native",
+    "rootNamespace": "Motphys.Rigidbody.Native",
+    "references": [
+        "Motphys.Rigidbody.Native.Standard",
+        "Motphys.Rigidbody.Native.Deterministic",
+        "Motphys.Rigidbody.Native.Standard.Development",
+        "Motphys.Rigidbody.Native.Deterministic.Development"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

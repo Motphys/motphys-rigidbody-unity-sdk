@@ -1,0 +1,16 @@
+{
+    "name": "Motphys.Rigidbody.Native.Standard.Development.Editor",
+    "rootNamespace": "Motphys.Rigidbody.Native.Standard.Development.Editor",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

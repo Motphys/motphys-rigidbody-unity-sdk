@@ -1,0 +1,17 @@
+{
+    "name": "Motphys.DebugDraw.Core",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Mathematics",
+        "Motphys.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Motphys.Rigidbody",
+    "rootNamespace": "",
+    "references": [
+        "Motphys.Rigidbody.RawApi",
+        "Motphys.Core",
+        "Unity.Burst",
+        "Motphys.Rigidbody.Native"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
