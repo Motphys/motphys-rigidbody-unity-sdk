@@ -50,7 +50,7 @@ Scope(s): com.motphys
 3. 点左上角的 `+`
 4. 选择 `Add package by name...`
 5. `name` 填 `com.motphys.rigidbody`
-6. `version` 填 `2.0.0-beta.7`
+6. `version` 填 `2.0.0-beta.8`
 
 除此之外，也可以访问我们的 [GitHub 仓库](https://github.com/Motphys/motphys-rigidbody-unity-sdk)来下载 SDK 和了解其他信息。
 

@@ -1,6 +1,6 @@
 {
   "name": "com.motphys.rigidbody",
-  "version": "2.0.0-beta.7",
+  "version": "2.0.0-beta.8",
   "displayName": "Motphys Rigidbody",
   "description": "Motphys Rigidbody Unity SDK",
   "unity": "2020.3",
@@ -11,10 +11,10 @@
   ],
   "author": "Motphys Developers <developers@motphys.com>",
   "dependencies": {
-    "com.motphys.rigidbody.rawapi": "2.0.0-beta.7"
+    "com.motphys.rigidbody.rawapi": "2.0.0-beta.8"
   },
   "type": "library",
-  "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.rigidbody@2.0.0-beta.7/manual/index.html",
+  "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.rigidbody@2.0.0-beta.8/manual/index.html",
   "licensesUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/LICENSE.md",
   "changelogUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/CHANGELOG.md",
   "contributors": [
