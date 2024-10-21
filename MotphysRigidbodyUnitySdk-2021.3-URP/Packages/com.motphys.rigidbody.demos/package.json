@@ -1,10 +1,10 @@
 {
   "name": "com.motphys.rigidbody.demos",
-  "version": "2.0.0-beta.6",
+  "version": "2.0.0-beta.7",
   "displayName": "Motphys Rigidbody Demos",
   "unity": "2020.3",
   "dependencies": {
-    "com.motphys.rigidbody": "2.0.0-beta.6",
+    "com.motphys.rigidbody": "2.0.0-beta.7",
     "com.unity.render-pipelines.universal": "12.1.7"
   },
   "author": "Motphys Developers <developers@motphys.com>",

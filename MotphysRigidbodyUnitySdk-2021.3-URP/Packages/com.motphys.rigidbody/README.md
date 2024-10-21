@@ -16,7 +16,7 @@ Motphys 刚体引擎 Unity SDK 的 Mono Behaviour 封装层，也是用户使用
 
 ## 使用
 
-见[用户手册](https://docs.motphys.com/Packages/com.motphys.rigidbody@2.0.0-beta.6/manual/index.html)。
+见[用户手册](https://docs.motphys.com/Packages/com.motphys.rigidbody@2.0.0-beta.7/manual/index.html)。
 
 ## 许可证
 

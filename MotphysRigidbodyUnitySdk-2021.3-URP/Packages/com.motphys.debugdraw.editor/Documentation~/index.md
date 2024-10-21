@@ -44,7 +44,7 @@ Scope(s): com.motphys
 3. 点左上角的 `+`
 4. 选择 `Add package by name...`
 5. `name` 填 `com.motphys.debugdraw.editor`
-6. `version` 填 `2.0.0-beta.6`
+6. `version` 填 `2.0.0-beta.7`
 
 # 开始使用
 

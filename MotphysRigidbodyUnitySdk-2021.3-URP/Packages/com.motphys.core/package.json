@@ -1,6 +1,6 @@
 {
   "name": "com.motphys.core",
-  "version": "2.0.0-beta.6",
+  "version": "2.0.0-beta.7",
   "displayName": "Motphys Core",
   "description": "Motphys Engine Core Library",
   "unity": "2020.3",
@@ -10,7 +10,7 @@
     "core"
   ],
   "author": "Motphys Developers <developers@motphys.com>",
-  "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.core@2.0.0-beta.6/manual/index.html",
+  "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.core@2.0.0-beta.7/manual/index.html",
   "licensesUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/LICENSE.md",
   "changelogUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/CHANGELOG.md",
   "type": "library",
