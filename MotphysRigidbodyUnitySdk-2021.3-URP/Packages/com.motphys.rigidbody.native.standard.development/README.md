@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://www.motphys.com/">
-    <img src="https://www.motphys.com/img/logo.868c1b7b.svg" alt="Logo" width="300" >
+    <img src="https://docs.motphys.com/Images/logo-blue.svg" alt="Logo" width="300" >
   </a>
   <h3 align="center">Motphys Rigidbody Native Standard Development</h3>
   <p align="center">

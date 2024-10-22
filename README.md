@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://www.motphys.com/">
-    <img src="https://www.motphys.com/logo-blue.svg" alt="Logo" width="400" >
+    <img src="https://docs.motphys.com/Images/logo-blue.svg" alt="Logo" width="400" >
   </a>
 
   <h3 align="center">Motphys Rigidbody Unity SDK</h3>
