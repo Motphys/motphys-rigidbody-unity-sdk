@@ -1,6 +1,6 @@
 {
   "name": "com.motphys.rigidbody.rawapi",
-  "version": "2.0.0-beta.8",
+  "version": "2.0.0-beta.9",
   "displayName": "Motphys Rigidbody Raw API",
   "description": "Low level data structures and API for the Motphys Rigidbody project.",
   "unity": "2020.3",
@@ -12,20 +12,19 @@
     "rigidbody"
   ],
   "author": "Motphys Developers <developers@motphys.com>",
-  "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.rigidbody.rawapi@2.0.0-beta.8/manual/index.html",
+  "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.rigidbody.rawapi@latest",
   "licensesUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/LICENSE.md",
   "changelogUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/CHANGELOG.md",
   "dependencies": {
-    "com.motphys.core": "2.0.0-beta.8",
-    "com.motphys.rigidbody.native": "2.0.0-beta.4"
-   
+    "com.motphys.core": "2.0.0-beta.9",
+    "com.motphys.rigidbody.native": "2.0.0-beta.5"
   },
   "type": "library",
   "contributors": [
     "Zhang Heng <heng.zhang@motphys.com>",
     "Zhao Xiang <xiang.zhao@motphys.com>",
-    "Li Fuheng <fuheng.li@motphys.com>",
     "Zhao Yuanqi <yuanqi.zhao@motphys.com>",
+    "Li Fuheng <fuheng.li@motphys.com>",
     "Liu Yang <yang.liu@motphys.com>",
     "Ma Chen <chen.ma@motphys.com>",
     "Yang Mukun <mukun.yang@motphys.com>",

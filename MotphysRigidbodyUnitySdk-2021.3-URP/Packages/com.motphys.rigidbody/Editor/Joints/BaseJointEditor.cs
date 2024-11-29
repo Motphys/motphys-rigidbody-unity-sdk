@@ -249,6 +249,14 @@ namespace Motphys.Rigidbody.Editor
                     ConnectedAnchorFrameGUI(serializedObject);
                     EditorGUI.EndDisabledGroup();
 
+                    var numPosSolverIter = serializedObject.FindProperty("_numPosSolverIter");
+                    EditorGUILayout.PropertyField(numPosSolverIter);
+
+                    var inertiaScaleA = serializedObject.FindProperty("_inertiaScaleA");
+                    var inertiaScaleB = serializedObject.FindProperty("_inertiaScaleB");
+                    EditorGUILayout.PropertyField(inertiaScaleA);
+                    EditorGUILayout.PropertyField(inertiaScaleB);
+
                     EditorGUI.indentLevel -= 1;
                 }
 

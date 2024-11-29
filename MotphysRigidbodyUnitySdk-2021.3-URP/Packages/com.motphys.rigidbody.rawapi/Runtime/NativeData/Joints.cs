@@ -163,6 +163,15 @@ namespace Motphys.Rigidbody
         };
 
         /// <value>
+        /// A spring with infinite damper, used for default velocity motor.
+        /// </value>
+        public static readonly SpringDamper InfiniteDamper = new SpringDamper()
+        {
+            _compliance = float.PositiveInfinity,
+            _damper = float.PositiveInfinity,
+        };
+
+        /// <value>
         /// Inactive spring have 0 stiffness and 0 damping.
         /// </value>
         public static readonly SpringDamper Inactive = new SpringDamper()
@@ -336,7 +345,16 @@ namespace Motphys.Rigidbody
         /// </value>
         public static readonly AngularMotorDrive Default = new AngularMotorDrive()
         {
-            spring = SpringDamper.Default,
+            spring = SpringDamper.InfiniteStiffness,
+            maxTorque = float.PositiveInfinity,
+        };
+
+        /// <value>
+        /// Default velcoity drive.
+        /// </value>
+        public static readonly AngularMotorDrive DefaultVelocityDrive = new AngularMotorDrive()
+        {
+            spring = SpringDamper.InfiniteDamper,
             maxTorque = float.PositiveInfinity,
         };
     }
@@ -599,6 +617,9 @@ namespace Motphys.Rigidbody
             public float breakForce;
             public float breakTorque;
             public TypedJointConfig type;
+            public uint numPositionIterations;
+            public float inertiaScaleA;
+            public float inertiaScaleB;
 
             public JointConfig(TypedJointConfig type)
             {
@@ -608,6 +629,9 @@ namespace Motphys.Rigidbody
                 anchorFramePair = AnchorFramePair.Identity;
                 breakForce = float.PositiveInfinity;
                 breakTorque = float.PositiveInfinity;
+                numPositionIterations = 1;
+                inertiaScaleA = 1.0f;
+                inertiaScaleB = 1.0f;
             }
         }
 
@@ -686,6 +710,8 @@ namespace Motphys.Rigidbody
             public AngularMotorNative motorDrive;
 
             public float angularDamper;
+            public float inertiaScaleA;
+            public float inertiaScaleB;
 
             public static implicit operator TypedJointConfig(HingeJointConfig config)
             {

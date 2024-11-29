@@ -39,7 +39,7 @@ Motphys Physics 是一个使用 Rust 语言编写的高性能、高精度且稳�
 
 1. 在 Unity/团结引擎编辑器中，打开 `Edit/Project Setting/PackageManager`，按以下参数添加一个 `Scoped Registry`：
 
-```
+```text
 Name: package.openupm.com
 URL: https://package.openupm.com
 Scope(s): com.motphys
@@ -50,7 +50,7 @@ Scope(s): com.motphys
 3. 点左上角的 `+`
 4. 选择 `Add package by name...`
 5. `name` 填 `com.motphys.rigidbody`
-6. `version` 填 `2.0.0-beta.8`
+6. `version` 填 `2.0.0-beta.9`
 
 除此之外，也可以访问我们的 [GitHub 仓库](https://github.com/Motphys/motphys-rigidbody-unity-sdk)来下载 SDK 和了解其他信息。
 

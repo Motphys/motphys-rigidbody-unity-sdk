@@ -1,6 +1,6 @@
 {
   "name": "com.motphys.rigidbody.native",
-  "version": "2.0.0-beta.4",
+  "version": "2.0.0-beta.5",
   "description": "Motphys rigidbody physics engine in Rust, for Unity.",
   "keywords": [
     "motion",
@@ -14,8 +14,8 @@
   "author": "Motphys Developers <developers@motphys.com>",
   "contributors": [
     "Zhang Heng <heng.zhang@motphys.com>",
-    "Zhao Yuanqi <yuanqi.zhao@motphys.com>",
     "Xia Zeye <zeye.xia@motphys.com>",
+    "Zhao Yuanqi <yuanqi.zhao@motphys.com>",
     "Zhao Xiang <xiang.zhao@motphys.com>",
     "Ma Chen <chen.ma@motphys.com>",
     "Ding Wenyu <wenyu.ding@motphys.com>",
@@ -25,25 +25,25 @@
     "Zhang Bo <bo.zhang@motphys.com>",
     "Cui Hanqing <hanqing.cui@motphys.com>",
     "Lin Hongyu <hongyu.lin@motphys.com>",
-    "Zhao Yiming <yiming.zhao@motphys.com>",
     "Li Fuheng <fuheng.li@motphys.com>",
+    "Zhao Yiming <yiming.zhao@motphys.com>",
     "Zou Peicheng <peicheng.zou@motphys.com>",
     "Chang Mengqi <mengqi.chang@motphys.com>",
     "Xu Hang <hang.xu@motphys.com>"
   ],
   "displayName": "Motphys Rigidbody Native Plugin",
   "dependencies": {
-    "com.motphys.rigidbody.native.standard": "2.0.0-beta.4",
-    "com.motphys.rigidbody.native.standard.development": "2.0.0-beta.4"
+    "com.motphys.rigidbody.native.standard": "2.0.0-beta.5",
+    "com.motphys.rigidbody.native.standard.development": "2.0.0-beta.5"
   },
   "repository": {
     "type": "git",
     "url": "git@gitlab.mp:motphys/motphys-rigidbody.git",
-    "revision": "2db0179e7d715572fa3af0cee7ae583eb1dd4442",
+    "revision": "742903314892be422000050befb181ede22aa82c",
     "directory": "./package/com.motphys.rigidbody.native"
   },
   "unifiedCi": {
-    "jobId": "1313097",
-    "pipelineId": "56485"
+    "jobId": "1382813",
+    "pipelineId": "58545"
   }
 }

@@ -149,3 +149,29 @@
 
 - 物理组件的图标在场景视图中会默认渲染，需要手动禁用。
 - Unity 6 中的编辑器相关逻辑发生了变化，因此对该版本的支持尚不稳定。
+
+# 2.0.0-beta.9
+
+## **Rigid Bodies**
+
+- Support for configuring the iteration count of joints individually.
+- Support for scaling the inertia of bodies on a joint during simulation using a scale configuration.
+- Support for creating a ConvexHull from meshes with a thickness of 0.
+- When generating the convex hull, meshes like spheres and capsules no longer fail and are instead substituted with simpler shapes.
+
+## **Performance Optimization**
+
+- Optimized collision detection performance on mobile devices.
+
+# 2.0.0-beta.9
+
+## 刚体
+
+- 支持单独配置 Joint 的迭代次数
+- 支持通过配置 scale 在解算时缩放 Joint 上 body 的 interia
+- 支持基于厚度为 0 的网格来创建 ConvexHull
+- 创建凸包时，球体、胶囊体等网格不再发生失败，而是用简单的形状代替
+
+## 性能优化
+
+- 优化了移动端上碰撞检测的性能

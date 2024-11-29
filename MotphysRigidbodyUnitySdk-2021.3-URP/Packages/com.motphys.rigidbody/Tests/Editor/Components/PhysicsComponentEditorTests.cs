@@ -15,7 +15,6 @@
 using Motphys.Rigidbody.Internal;
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.TestTools;
 using UnityEngine.TestTools.Utils;
 
 namespace Motphys.Rigidbody.Editor
@@ -206,38 +205,6 @@ namespace Motphys.Rigidbody.Editor
         }
 
         [Test]
-        public void TestInvalidMeshCollierAdd_Quad()
-        {
-            var go = GameObject.CreatePrimitive(PrimitiveType.Quad);
-            var mesh = go.GetComponent<MeshFilter>().sharedMesh;
-            var collider = go.AddComponent<MeshCollider3D>();
-            collider.convex = true;
-            collider.mesh = mesh;
-
-            Assert.IsFalse(collider._isMeshValid);
-
-            var correct = string.Format("Failed to create a convex mesh from the source mesh '{0}', because the volume of source mesh is too small.", mesh.name);
-            Assert.AreEqual(collider._errorLog, correct);
-            LogAssert.Expect(LogType.Error, correct);
-        }
-
-        [Test]
-        public void TestInvalidMeshCollierAdd_Capsule()
-        {
-            var go = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-            var mesh = go.GetComponent<MeshFilter>().sharedMesh;
-            var collider = go.AddComponent<MeshCollider3D>();
-            collider.convex = true;
-            collider.mesh = mesh;
-
-            Assert.IsFalse(collider._isMeshValid);
-
-            var correct = string.Format("Failed to create a convex mesh from the source mesh '{0}', because the number of generated polygons is greater than limit (255). Consider simplifying your mesh", mesh.name);
-            Assert.AreEqual(collider._errorLog, correct);
-            LogAssert.Expect(LogType.Error, correct);
-        }
-
-        [Test]
         public void TestInvalidMeshCollierAdd_Triangle()
         {
             var mesh = new Mesh();
@@ -249,11 +216,7 @@ namespace Motphys.Rigidbody.Editor
             collider.convex = true;
             collider.mesh = mesh;
 
-            Assert.IsFalse(collider._isMeshValid);
-
-            var correct = string.Format("Failed to create a convex mesh from the source mesh '{0}', because the number of vertices from source mesh is less than 4.", mesh.name);
-            Assert.AreEqual(collider._errorLog, correct);
-            LogAssert.Expect(LogType.Error, correct);
+            Assert.IsTrue(collider._isMeshValid);
         }
     }
 }

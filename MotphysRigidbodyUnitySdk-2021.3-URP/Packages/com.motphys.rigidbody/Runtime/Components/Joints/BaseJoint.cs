@@ -12,6 +12,7 @@
 // the terms and conditions in the license file accompanying. You may not use this software except
 // in compliance with the license file.
 
+using System;
 using System.Collections.Generic;
 using Motphys.Rigidbody.Internal;
 using UnityEngine;
@@ -27,6 +28,25 @@ namespace Motphys.Rigidbody
         /// </value>
         [SerializeField]
         protected bool _autoConfigureConnected = true;
+
+        /// <value>
+        /// Custom joint positional solver iterations.
+        /// </value>
+        [SerializeField]
+        [Range(1, PhysicsProjectSettings.MaxPosSolverIter)]
+        protected uint _numPosSolverIter = 1;
+
+        /// <value>
+        /// Inertia scale for body A.
+        /// </value>
+        [SerializeField]
+        protected float _inertiaScaleA = 1.0f;
+
+        /// <value>
+        /// Inertia scale for body B.
+        /// </value>
+        [SerializeField]
+        protected float _inertiaScaleB = 1.0f;
 
         /// <value>
         /// The connected body.
@@ -84,6 +104,78 @@ namespace Motphys.Rigidbody
                 {
                     SetDirty();
                 }
+            }
+        }
+
+        /// <value>
+        /// Custom joint positional solver iterations, range from 1 to 20.
+        /// This is a lower bounds setting.
+        /// The engine will choose the max value between this and
+        /// the global positional solver iterations for each island.
+        /// </value>
+        public uint numPosSolverIter
+        {
+            get => _numPosSolverIter;
+            set
+            {
+                if (_numPosSolverIter == value)
+                {
+                    return;
+                }
+
+                if (value < 1 || value > PhysicsProjectSettings.MaxPosSolverIter)
+                {
+                    throw new ArgumentException($"numPosSolverIter's range is in [1,{PhysicsProjectSettings.MaxPosSolverIter}]");
+                }
+
+                _numPosSolverIter = value;
+                SetDirty();
+            }
+        }
+
+        /// <value>
+        /// Inertia scale for body A, inertia scale should be positive.
+        /// </value>
+        public float inertiaScaleA
+        {
+            get => _inertiaScaleA;
+            set
+            {
+                if (_inertiaScaleA == value)
+                {
+                    return;
+                }
+
+                if (value <= 0f)
+                {
+                    throw new ArgumentException("inertia scale A should be positive.");
+                }
+
+                _inertiaScaleA = value;
+                SetDirty();
+            }
+        }
+
+        /// <value>
+        /// Inertia scale for body B, inertia scale should be positive.
+        /// </value>
+        public float inertiaScaleB
+        {
+            get => _inertiaScaleB;
+            set
+            {
+                if (_inertiaScaleB == value)
+                {
+                    return;
+                }
+
+                if (value <= 0f)
+                {
+                    throw new ArgumentException("inertia scale B should be positive.");
+                }
+
+                _inertiaScaleB = value;
+                SetDirty();
             }
         }
 
@@ -409,6 +501,9 @@ namespace Motphys.Rigidbody
                 type = typedConfig,
                 breakForce = _breakForce,
                 breakTorque = _breakTorque,
+                numPositionIterations = _numPosSolverIter,
+                inertiaScaleA = _inertiaScaleA,
+                inertiaScaleB = _inertiaScaleB,
             };
 
             return true;
@@ -574,7 +669,7 @@ namespace Motphys.Rigidbody
             [SerializeField]
             internal D3AngularMotor _rotationMotor = D3AngularMotor.Default;
             [SerializeField]
-            internal D3AngularMotor _velocityMotor = D3AngularMotor.Default;
+            internal D3AngularMotor _velocityMotor = D3AngularMotor.DefaultVelocityMotor;
         }
         [System.Serializable]
         [UnityEngine.TestTools.ExcludeFromCoverage]
@@ -588,6 +683,7 @@ namespace Motphys.Rigidbody
 
         protected virtual void OnValidate()
         {
+            ValidateInertiaScale();
             ValidateConnectedBody();
             ValidateAtNotPlaying();
             SetDirty();
@@ -614,6 +710,25 @@ namespace Motphys.Rigidbody
             if (!Application.isPlaying)
             {
                 TryAutoConfigureConnected();
+            }
+        }
+
+        /// <summary>
+        /// Only execute when user updates properties on editor inspector. So exclude it from test coverage.
+        /// </summary>
+        [UnityEngine.TestTools.ExcludeFromCoverage]
+        private void ValidateInertiaScale()
+        {
+            if (_inertiaScaleA <= 0.0f)
+            {
+                Debug.LogError("Inertia scale A: " + _inertiaScaleA + " should be positive");
+                _inertiaScaleA = 1f;
+            }
+
+            if (_inertiaScaleB <= 0.0f)
+            {
+                Debug.LogError("Inertia scale B: " + _inertiaScaleB + " should be positive");
+                _inertiaScaleB = 1f;
             }
         }
 

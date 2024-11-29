@@ -591,7 +591,9 @@ namespace Motphys.Rigidbody.Tests
             var joint = bodyA.gameObject.AddComponent<FixedJoint3D>();
             joint.autoConfigureConnected = false;
             joint.connectedBody = bodyB;
-
+            joint.numPosSolverIter = 10;
+            joint.inertiaScaleA = 1.0f;
+            joint.inertiaScaleB = 1.0f;
             joint.ignoreCollision = true;
             Assert.IsTrue(joint.ignoreCollision);
 
@@ -683,6 +685,17 @@ namespace Motphys.Rigidbody.Tests
             Assert.IsTrue(dirty);
             PhysicsManager.Simulate(0.02f);
 
+            var posIter = joint.numPosSolverIter;
+            Assert.That(posIter, Is.EqualTo(10));
+            joint.numPosSolverIter = 10;
+            Assert.IsTrue(!joint.isDirty);
+            {
+                Assert.That(() =>
+                {
+                    joint.numPosSolverIter = 30;
+                }, Throws.ArgumentException);
+            }
+
             dirty = joint.isDirty;
             Assert.IsTrue(!dirty);
 
@@ -701,6 +714,27 @@ namespace Motphys.Rigidbody.Tests
             Assert.That(force != Vector3.zero);
             var torque = joint.torque;
             Assert.That(torque != Vector3.zero);
+
+            joint.inertiaScaleA = 100f;
+            joint.inertiaScaleB = 100f;
+            PhysicsManager.Simulate(0.02f);
+            var inertiaScaleA = joint.inertiaScaleA;
+            var ineritaScaleB = joint.inertiaScaleB;
+            Assert.That(inertiaScaleA, Is.EqualTo(100f));
+            Assert.That(ineritaScaleB, Is.EqualTo(100f));
+            {
+                Assert.That(() =>
+                {
+                    joint.inertiaScaleA = 0;
+                }, Throws.ArgumentException);
+            }
+
+            {
+                Assert.That(() =>
+                {
+                    joint.inertiaScaleB = 0;
+                }, Throws.ArgumentException);
+            }
         }
 
         [UnityTest]

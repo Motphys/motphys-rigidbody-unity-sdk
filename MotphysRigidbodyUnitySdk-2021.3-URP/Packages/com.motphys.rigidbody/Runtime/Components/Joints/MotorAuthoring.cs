@@ -287,6 +287,19 @@ namespace Motphys.Rigidbody
             twistDrive = AngularMotorDrive.Default,
             swingDrive = AngularMotorDrive.Default,
         };
+
+        /// <value>
+        /// Default velocity D3AngularMotor.
+        /// </value>
+        public static readonly D3AngularMotor DefaultVelocityMotor = new D3AngularMotor()
+        {
+            mode = AngularMotorDriveMode.SLerp,
+            targetRotation = Quaternion.identity,
+            targetAngularVelocity = Vector3.zero,
+            slerpDrive = AngularMotorDrive.DefaultVelocityDrive,
+            twistDrive = AngularMotorDrive.Default,
+            swingDrive = AngularMotorDrive.Default,
+        };
     }
 
     /// <summary>
@@ -381,7 +394,18 @@ namespace Motphys.Rigidbody
         {
             targetAngle = 0,
             targetSpeed = 0,
-            spring = SpringDamper.Default,
+            spring = SpringDamper.InfiniteStiffness,
+            maxTorque = float.PositiveInfinity,
+        };
+
+        /// <value>
+        /// The default configuration of the velocity angular motor.
+        /// </value>
+        public static readonly AngularMotor DefaultVelocityMotor = new AngularMotor()
+        {
+            targetAngle = 0,
+            targetSpeed = 0,
+            spring = SpringDamper.InfiniteDamper,
             maxTorque = float.PositiveInfinity,
         };
     }

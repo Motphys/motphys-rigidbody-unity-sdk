@@ -174,9 +174,9 @@ namespace Motphys.Rigidbody.RawApi.Tests
         public void TestAngularMotorDrive()
         {
             var defaultMotor = AngularMotorDrive.Default;
-            Assert.That(defaultMotor.spring.stiffness == 100);
-            Assert.That(defaultMotor.spring.compliance == 0.01f);
-            Assert.That(defaultMotor.spring.damper == 10);
+            Assert.That(defaultMotor.spring.stiffness == float.PositiveInfinity);
+            Assert.That(defaultMotor.spring.compliance == 0f);
+            Assert.That(defaultMotor.spring.damper == 0);
             Assert.That(defaultMotor.maxTorque > 0);
 
             var spring = new SpringDamper(200, 20);

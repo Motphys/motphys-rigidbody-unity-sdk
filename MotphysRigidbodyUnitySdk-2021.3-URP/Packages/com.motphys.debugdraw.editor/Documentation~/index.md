@@ -33,7 +33,7 @@ Motphys Physics Debugger 是 Motphys 提供的针对场景中物体的可视化�
 
 1. 在 Unity/团结引擎编辑器中，打开 `Edit/Project Setting/PackageManager`，按以下参数添加一个 `Scoped Registry`：
 
-```
+```text
 Name: package.openupm.com
 URL: https://package.openupm.com
 Scope(s): com.motphys
@@ -44,7 +44,7 @@ Scope(s): com.motphys
 3. 点左上角的 `+`
 4. 选择 `Add package by name...`
 5. `name` 填 `com.motphys.debugdraw.editor`
-6. `version` 填 `2.0.0-beta.8`
+6. `version` 填 `2.0.0-beta.9`
 
 # 开始使用
 

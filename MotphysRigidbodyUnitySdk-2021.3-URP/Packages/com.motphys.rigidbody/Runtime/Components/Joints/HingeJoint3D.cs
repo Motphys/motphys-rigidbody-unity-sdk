@@ -216,7 +216,7 @@ namespace Motphys.Rigidbody
         internal AngularMotor _rotationMotor = AngularMotor.Default;
         [SerializeField]
         [HideInInspector]
-        internal AngularMotor _velocityMotor = AngularMotor.Default;
+        internal AngularMotor _velocityMotor = AngularMotor.DefaultVelocityMotor;
         [SerializeField]
         [HideInInspector]
         internal MotorType _motorType;

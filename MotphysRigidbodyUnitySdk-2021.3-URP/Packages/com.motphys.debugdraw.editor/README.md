@@ -16,7 +16,7 @@ Motphys Physics Debugger 是 Motphys 提供的针对场景中物体的可视化�
 
 ## 使用
 
-见[用户手册](https://docs.motphys.com/Packages/com.motphys.debugdraw.editor@2.0.0-beta.8/manual/index.html)。
+见[用户手册](https://docs.motphys.com/Packages/com.motphys.debugdraw.editor@latest)。
 
 ## 许可证
 

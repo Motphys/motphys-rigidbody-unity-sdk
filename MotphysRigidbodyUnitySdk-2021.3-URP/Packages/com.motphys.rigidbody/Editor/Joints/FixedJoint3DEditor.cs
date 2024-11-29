@@ -23,7 +23,7 @@ namespace Motphys.Rigidbody.Editor
     {
         private FixedJoint3D _fixedJoint;
         protected override bool onlyAnchor => true;
-        protected override bool useDetailGUI => false;
+        protected override bool useDetailGUI => true;
         protected override void AnchorFrameGUI(SerializedObject serializedObject) { }
         protected override void ConnectedAnchorFrameGUI(SerializedObject serializedObject) { }
 

@@ -74,24 +74,8 @@ namespace Motphys.Rigidbody
 
                     ConvexHullUtils.DestroyConvexMesh(convexMeshPtr);
                     break;
-                case ResultCode.ConvexCreatePointCountLessThanFour:
-                    _errorLog = $"Failed to create a convex mesh from the source mesh '{rawMesh.name}', because the number of vertices from source mesh is less than 4.";
-                    Debug.LogError(_errorLog);
-                    break;
-                case ResultCode.ConvexCreateVolumeTooSmall:
-                    _errorLog = $"Failed to create a convex mesh from the source mesh '{rawMesh.name}', because the volume of source mesh is too small.";
-                    Debug.LogError(_errorLog);
-                    break;
                 case ResultCode.ConvexCreateDegenerate:
                     _errorLog = $"Failed to create a convex mesh from the source mesh '{rawMesh.name}', because the number of triangles is less than 4, or the triangles are too small and too close together.";
-                    Debug.LogError(_errorLog);
-                    break;
-                case ResultCode.ConvexCreatePointCountOverflow:
-                    _errorLog = $"Failed to create a convex mesh from the source mesh '{rawMesh.name}', because the number of vertices from source mesh is greater than {MAX_POINT_COUNT}.";
-                    Debug.LogError(_errorLog);
-                    break;
-                case ResultCode.ConvexCreateFaceCountLimitedHit:
-                    _errorLog = $"Failed to create a convex mesh from the source mesh '{rawMesh.name}', because the number of generated polygons is greater than limit (255). Consider simplifying your mesh";
                     Debug.LogError(_errorLog);
                     break;
             }

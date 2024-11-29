@@ -25,6 +25,7 @@ namespace Motphys.Rigidbody
     [System.Serializable]
     public class PhysicsProjectSettings : CustomProjectSettings
     {
+        public const uint MaxPosSolverIter = 20;
         /// <value>
         /// The physics setting instance.
         /// </value>
@@ -62,7 +63,7 @@ namespace Motphys.Rigidbody
         private uint _numSubstep = 2;
 
         [SerializeField]
-        [Range(1, 20)]
+        [Range(1, MaxPosSolverIter)]
         [Tooltip("The number of position solver iterations for all constraints in each substep. Increase the number of solver iterations will improve the stability and accuracy of the simulation but will also increase the computation cost.")]
         private uint _numSolverIter = 1;
 

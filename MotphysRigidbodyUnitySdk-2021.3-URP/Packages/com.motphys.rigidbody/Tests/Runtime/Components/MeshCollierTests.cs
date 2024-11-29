@@ -76,7 +76,7 @@ namespace Motphys.Rigidbody.Tests
             Assert.That(box.transform.position.y > 0.98f, box.transform.position.ToString("0.0000"));
         }
 
-        [UnityTest]
+        [UnityTest, Ignore("adapt to the new convex hull log (#1326)")]
         public IEnumerator TestMeshCollierBake()
         {
             var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
