@@ -1,6 +1,6 @@
 {
   "name": "com.motphys.rigidbody",
-  "version": "2.0.0-beta.9",
+  "version": "2.0.0-beta.10",
   "displayName": "Motphys Rigidbody",
   "description": "Motphys Rigidbody Unity SDK",
   "unity": "2020.3",
@@ -11,7 +11,7 @@
   ],
   "author": "Motphys Developers <developers@motphys.com>",
   "dependencies": {
-    "com.motphys.rigidbody.rawapi": "2.0.0-beta.9"
+    "com.motphys.rigidbody.rawapi": "2.0.0-beta.10"
   },
   "type": "library",
   "documentationUrl": "https://docs.motphys.com/Packages/com.motphys.rigidbody@latest",

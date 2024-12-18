@@ -1,11 +1,11 @@
 {
   "name": "com.motphys.debugdraw.core",
-  "version": "2.0.0-beta.9",
+  "version": "2.0.0-beta.10",
   "displayName": "Motphys Debug Draw Core",
   "description": "Core package of the visualization tools provided by Motphys.",
   "unity": "2020.3",
   "dependencies": {
-    "com.motphys.core": "2.0.0-beta.9",
+    "com.motphys.core": "2.0.0-beta.10",
     "com.unity.mathematics": "1.2.6"
   },
   "author": "Motphys Developers <developers@motphys.com>",

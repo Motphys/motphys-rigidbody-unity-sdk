@@ -1,13 +1,13 @@
 {
   "name": "com.motphys.debugdraw.editor",
-  "version": "2.0.0-beta.9",
+  "version": "2.0.0-beta.10",
   "displayName": "Motphys Debug Draw Editor",
   "description": "Visualization tools provided by Motphys, used for visualizing objects in various scenarios.",
   "unity": "2020.3",
   "dependencies": {
-    "com.motphys.debugdraw.core": "2.0.0-beta.9",
-    "com.motphys.rigidbody": "2.0.0-beta.9",
-    "com.motphys.rigidbody.rawapi": "2.0.0-beta.9",
+    "com.motphys.debugdraw.core": "2.0.0-beta.10",
+    "com.motphys.rigidbody": "2.0.0-beta.10",
+    "com.motphys.rigidbody.rawapi": "2.0.0-beta.10",
     "com.unity.collections": "1.4.0",
     "com.unity.mathematics": "1.2.6"
   },

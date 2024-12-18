@@ -1115,7 +1115,6 @@ Apache License 2.0
 Apache License 2.0
 
 ##### Used by
-- [libc]( https://github.com/rust-lang/libc ) 0.2.153
 - [paste]( https://github.com/dtolnay/paste ) 1.0.14
 - [proc-macro2]( https://github.com/dtolnay/proc-macro2 ) 1.0.76
 - [quote]( https://github.com/dtolnay/quote ) 1.0.35
@@ -1969,6 +1968,7 @@ limitations under the License.
 Apache License 2.0
 
 ##### Used by
+- [libc]( https://github.com/rust-lang/libc ) 0.2.153
 - [wide]( https://github.com/Lokathor/wide ) 0.7.28
 
 ##### License

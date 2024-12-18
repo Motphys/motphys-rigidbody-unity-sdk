@@ -1,6 +1,6 @@
 {
   "name": "com.motphys.rigidbody.rawapi",
-  "version": "2.0.0-beta.9",
+  "version": "2.0.0-beta.10",
   "displayName": "Motphys Rigidbody Raw API",
   "description": "Low level data structures and API for the Motphys Rigidbody project.",
   "unity": "2020.3",
@@ -16,8 +16,8 @@
   "licensesUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/LICENSE.md",
   "changelogUrl": "https://github.com/Motphys/motphys-rigidbody-unity-sdk/blob/main/CHANGELOG.md",
   "dependencies": {
-    "com.motphys.core": "2.0.0-beta.9",
-    "com.motphys.rigidbody.native": "2.0.0-beta.5"
+    "com.motphys.core": "2.0.0-beta.10",
+    "com.motphys.rigidbody.native": "2.0.0-beta.6"
   },
   "type": "library",
   "contributors": [

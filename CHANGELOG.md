@@ -175,3 +175,15 @@
 ## 性能优化
 
 - 优化了移动端上碰撞检测的性能
+
+# 2.0.0-beta.10
+
+## **Rigid Bodies**
+
+- The convex hull is constructed using a subset of vertices when the maximum number of faces is reached.
+
+# 2.0.0-beta.10
+
+## 刚体
+
+- 当达到最大面数限制时，将使用部分顶点构建凸包。
